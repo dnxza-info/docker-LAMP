@@ -4,7 +4,7 @@ MAINTAINER DNX DragoN "ratthee.jar@hotmail.com"
 
 ENV MYSQLPASS password
 	
-RUN apt-get update && apt-get install -y nano wget git \
+RUN apt-get update && apt-get install -y nano wget git software-properties-common \
 	&& rm -rf /var/lib/apt/lists/*
 
 # copy in code
